@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary *dict = @{@"mobile_phone" : @"18504626112"};
+    NSDictionary *dict = @{@"mobile_phone" : @"12345678910"};
     
     [[NetWorkingTool sharedNetWorkingTool] POSTRequestURLString:@"paymaster/getCode" andParameters:dict andSucces:^(id response) {
         NSLog(@"%@", response);
